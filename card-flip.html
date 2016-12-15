@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/card-flip.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+
+		$('#threeDChild').click(function(){
+			$(this).toggleClass('flip');
+
+		})
+
+		$('.face-holder').click(function(){
+			$(this).toggleClass('flip');
+		})
+
+
+	});
+
+
+
+	</script>
+</head>
+<body>
+
+<div class="card">
+	<!-- Inner container that will hold both divs, which will be back to back -->
+	<div class="face-holder">
+		<!-- front of the card -->
+		<div class="card-front">
+			<img src='palm-tree-clipart-palm-tree-silhouette-md.png'>
+			
+		</div>
+		<div class="card-back">
+			<img src='palm-tree-clipart-di88g5yie.png'>
+			
+		</div>
+		
+	</div>
+	
+</div>
+
+<div id="parent">
+
+<!-- 	<div id="threeDChild">Hello</div>
+ -->	
+</div>
+
+</body>
+</html>

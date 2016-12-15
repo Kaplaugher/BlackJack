@@ -68,6 +68,8 @@ $(document).ready(function(){
         reset();
     });
 
+   
+
 });
 
 function checkWin(){
@@ -108,6 +110,9 @@ function reset(){
     // reset the DOM
     // - cards
     $('.card').html('');
+    $('.card').css({
+        'visibility': 'hidden'
+    })
     // - totals
     var playerTotal = calculateTotal(playersHand,'player');
     var dealerTotal = calculateTotal(dealersHand,'dealer');
@@ -150,6 +155,9 @@ function placeCard(who, where, whatCard){
                         // '.' + 'player' + '-cards .card-' + 'one'
                         // '.player-cards .card-one'
     $(classSelector).html('<img src="cards/' + whatCard + '.png">');
+    $(classSelector).css({
+        'visibility': 'visible'
+    })
     // $('.player-cards .card-one').html('<img src="cards/2d.png">')
 }
 
